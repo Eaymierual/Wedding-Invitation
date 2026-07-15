@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jemputan Walimatulurus</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f2c1f;
+font-family:'Cormorant Garamond',serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:40px;
+}
+
+.card{
+max-width:420px;
+width:100%;
+background:transparent;
+padding:70px 42px;
+position:relative;
+color:#d6ab5a;
+}
+
+.card::before{
+ content:"";
+ position:absolute;
+ inset:12px;
+ border:1px solid rgba(214,171,90,0.12);
+ pointer-events:none;
+}
+
+.corner-svg{
+position:absolute;
+width:160px;
+height:160px;
+fill:none;
+stroke:#d6ab5a;
+stroke-width:1.2;
+opacity:0.96;
+}
+
+.top-svg{top:-18px;left:-18px;}
+.bottom-svg{bottom:-18px;right:-18px;transform:rotate(180deg);}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:72px;
+text-align:center;
+font-weight:400;
+margin-bottom:10px;
+color:#f0d89e;
+}
+
+.subtitle{
+text-align:center;
+font-size:18px;
+color:#e6c68b;
+margin-bottom:18px;
+line-height:1.4;
+}
+
+.line{
+width:220px;
+height:1px;
+background:rgba(214,171,90,0.2);
+margin:18px auto;
+position:relative;
+}
+
+.line::after{
+ content:'❖';
+ position:absolute;
+ left:50%;
+ top:-12px;
+ transform:translateX(-50%);
+ color:#d6ab5a;
+ font-size:18px;
+}
+
+.text{
+text-align:center;
+font-size:16px;
+line-height:1.8;
+color:#e6c07a;
+}
+
+.name{
+font-family:'Great Vibes',cursive;
+font-size:56px;
+margin-top:10px;
+margin-bottom:8px;
+color:#f7dfb6;
+letter-spacing:0.5px;
+line-height:1.1;
+}
+
+.name.small{
+font-size:24px;
+margin:0;
+color:#f3d794;
+}
+
+.details{
+text-align:center;
+font-size:15px;
+line-height:1.7;
+color:#e6c07a;
+}
+
+.address{
+font-size:15px;
+line-height:1.7;
+color:#ffffff;
+text-align:center;
+margin-top:8px;
+}
+
+.section-title{
+font-size:16px;
+font-weight:600;
+margin-top:20px;
+margin-bottom:8px;
+letter-spacing:1px;
+color:#e6c07a;
+text-align:center;
+}
+
+.info{
+font-size:15px;
+line-height:1.7;
+color:#e3c68b;
+text-align:center;
+}
+
+.footer{
+margin-top:24px;
+font-size:14px;
+text-align:center;
+color:#e6c07a;
+}
+
+.phone{
+font-size:16px;
+line-height:1.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<svg class="corner-svg top-svg" viewBox="0 0 120 120" aria-hidden="true">
+  <g transform="translate(10,10) scale(0.8)">
+    <path d="M60 2 C42 18, 18 22, 10 40 C4 58, 16 76, 36 82 C56 88, 76 80, 86 64 C96 46, 88 26, 70 16 C58 10, 60 2, 60 2 Z" stroke="#d6ab5a" fill="none"/>
+    <path d="M60 12 Q64 24, 54 28 Q48 32, 52 40" stroke="#d6ab5a" fill="none"/>
+    <circle cx="60" cy="40" r="4" fill="#d6ab5a" />
+  </g>
+</svg>
+
+<svg class="corner-svg bottom-svg" viewBox="0 0 120 120" aria-hidden="true">
+  <g transform="translate(10,10) scale(0.8)">
+    <path d="M60 2 C42 18, 18 22, 10 40 C4 58, 16 76, 36 82 C56 88, 76 80, 86 64 C96 46, 88 26, 70 16 C58 10, 60 2, 60 2 Z" stroke="#d6ab5a" fill="none"/>
+    <path d="M60 12 Q64 24, 54 28 Q48 32, 52 40" stroke="#d6ab5a" fill="none"/>
+    <circle cx="60" cy="40" r="4" fill="#d6ab5a" />
+  </g>
+</svg>
+
+<h1>Jemputan</h1>
+
+<div class="subtitle">
+Walimatulurus dan majlis doa selamat
+</div>
+
+<div class="line"></div>
+
+<div class="text">
+Suami/isteri sekeluarga<br>
+ke majlis perkahwinan kami
+</div>
+
+<div class="name">
+Rodzlan bin jamil
+</div>
+
+<div class="name small">dan</div>
+
+<div class="name">
+Norazizah binti hamid
+</div>
+
+<div class="line"></div>
+
+<div class="details">Pada hari</div>
+<div class="name small">8 ogos 2026</div>
+<div class="details">di kediaman kami beralamat</div>
+
+<div class="address">
+No 116, Peringkat 1,<br>
+Jalan Melati, Felda Ijok,<br>
+34120, Selama, Perak
+</div>
+
+<div class="line"></div>
+
+<div class="section-title">Turut mengundang :</div>
+
+<div class="info">
+Norhashimah Hamid<br>
+Norisah Hamid<br>
+Norlia Hamid<br>
+Noraziah Hamid
+</div>
+
+<div class="line"></div>
+
+<div class="footer">
+<b>No. Tel</b><br><br>
+<div class="phone">
+011-62845858<br>
+011-10658589
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

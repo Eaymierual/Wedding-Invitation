@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jemputan Perkahwinan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="intro-screen active" id="introScreen">
+      <div class="intro-card">
+        <p class="intro-label">💌 Klik untuk buka jemputan</p>
+        <button class="open-button" id="openButton">Buka Jemputan</button>
+      </div>
+    </div>
+
+    <div class="invitation hidden" id="invitation">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="letter">
+            <div class="letter-top">
+              <p class="letter-title">Jemputan</p>
+              <p class="letter-subtitle">Walimatulurus dan majlis doa selamat</p>
+            </div>
+            <div class="names" id="namesSection">
+              <p class="line-text">Suami/isteri sekeluarga<br>ke majlis perkahwinan kami</p>
+              <h1>Rodzlan bin jamil</h1>
+              <p class="and-text">dan</p>
+              <h1>Norazizah binti hamid</h1>
+            </div>
+            <div class="details-card">
+              <p>Pada hari</p>
+              <p class="primary-detail">8 ogos 2026</p>
+              <p>di kediaman kami beralamat</p>
+              <p>No 116, Peringkat 1,<br>Jalan Melati, Felda Ijok,<br>34120, Selama, Perak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flower flower-top" aria-hidden="true"></div>
+      <div class="flower flower-bottom" aria-hidden="true"></div>
+      <div class="scroll-hint hidden" id="scrollHint">
+        <p>Scroll ke bawah</p>
+        <span>↓</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="content hidden" id="mainContent">
+    <section class="section countdown" id="countdownSection">
+      <h2>Countdown</h2>
+      <div class="countdown-grid">
+        <div><span id="days">00</span><small>Hari</small></div>
+        <div><span id="hours">00</span><small>Jam</small></div>
+        <div><span id="minutes">00</span><small>Minit</small></div>
+        <div><span id="seconds">00</span><small>Saat</small></div>
+      </div>
+    </section>
+
+    <section class="section lokasi">
+      <h2>Lokasi</h2>
+      <p>Kami menjemput anda ke majlis di kediaman berikut:</p>
+      <address>No 116, Peringkat 1, Jalan Melati, Felda Ijok, 34120 Selama, Perak</address>
+    </section>
+
+    <section class="section map">
+      <h2>Google Maps</h2>
+      <a class="map-link" href="https://maps.app.goo.gl/mKedK8vB2A7CzY6u8" target="_blank" rel="noreferrer">Buka lokasi di Google Maps</a>
+    </section>
+
+    <section class="section music">
+      <h2>Lagu</h2>
+      <p>Dengarkan lagu jemputan pada YouTube:</p>
+      <a class="map-link" href="https://youtu.be/TXTPjmK95h4?si=JScv3VFsAq5bqF4K" target="_blank" rel="noreferrer">Buka lagu di YouTube</a>
+    </section>
+
+    <section class="section share">
+      <h2>Share</h2>
+      <p>Kongsi jemputan ini terus ke WhatsApp:</p>
+      <button class="share-button" id="shareButton">Kongsi ke WhatsApp</button>
+      <p class="share-note">Jika jemputan ini dihoskan dalam talian, butang akan buka WhatsApp dengan mesej dan pautan.</p>
+    </section>
+
+    <section class="section rsvp">
+      <h2>RSVP</h2>
+      <form id="rsvpForm">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Nama anda" required>
+        <label for="phone">No. Tel / Emel</label>
+        <input type="text" id="phone" name="phone" placeholder="011-xxxxxxx atau emel anda" required>
+        <label for="message">Ucapan</label>
+        <textarea id="message" name="message" rows="4" placeholder="Doa dan ucapan anda"></textarea>
+        <button type="submit">Hantar RSVP</button>
+      </form>
+      <div class="rsvp-feedback hidden" id="feedbackMessage">Terima kasih! Jemputan anda telah diterima.</div>
+    </section>
+
+    <section class="section thanks">
+      <h2>Terima kasih</h2>
+      <p>Terima kasih kerana sudi berkongsi kegembiraan bersama kami. Semoga Allah merahmati majlis ini.</p>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop src="music/lagu.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
